@@ -24,8 +24,8 @@
 					<span class="fa fa-home"></span>&nbsp;<span><?php echo $address; ?>:</span>
 					<address>
 						Jim Martens<br />
-						Hamburg<br />
-						Germany
+						Hamburg<?php if ($lang != 'de') {?><br />
+						Germany<?php } ?>
 					</address>
 					<div>
 						<span class="fa fa-envelope"></span>&nbsp;<span><?php echo $email; ?>:</span>
@@ -116,7 +116,7 @@
 						</div>
 						<div>
 							<header>
-								<h5>2012-present: <?php echo $universityHamburg; ?></h5>
+								<h5>2012-<?php echo $now; ?>: <?php echo $universityHamburg; ?></h5>
 							</header>
 							<ul class="items">
 								<li><?php echo $BScInformatics; ?></li>

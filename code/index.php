@@ -7,17 +7,31 @@ namespace martens;
  */
 class Index
 {
-	private $languageID;
+	private $languageCode;
 
 	public function __construct()
 	{
-		$this->languageID = 0;
+		$this->languageCode = $this->getLanguageCode();
 	}
 
 	public function show()
 	{
-		include('variables.'.$this->languageID.'.php');
+		include('variables.'.$this->languageCode.'.php');
 		include('index.html.php');
+	}
+
+	private function getLanguageCode()
+	{
+		$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+		if (isset($_REQUEST['l'])) {
+			$lang = trim($_REQUEST['l']);
+		}
+		if ($lang == 'de') {
+			return 'de';
+		}
+		else {
+			return 'en';
+		}
 	}
 }
 

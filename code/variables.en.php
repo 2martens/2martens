@@ -1,4 +1,6 @@
 <?php
+// variables for English
+$lang = 'en';
 
 // header
 $name = 'Jim Martens';
@@ -11,7 +13,7 @@ $address = 'Address';
 $email = 'Email';
 // about me
 $detailedDescription = "<p>Great! You're still here. If you want to get in touch, write me an email ".
-"to the email listed in the sidebar on the right side. I check my mails mostly on a daily basis. ".
+"to the email address listed in the sidebar on the right side. I check my mails mostly on a daily basis. ".
 "But before you send me job offerings or other things, continue reading to understand a little better ".
 "who I am.</p>".
 "<p>I have started programming around 2008. After learning HTML (which is not a programming language), ".
@@ -20,11 +22,11 @@ $detailedDescription = "<p>Great! You're still here. If you want to get in touch
 "fully featured web application named 'Ultimate CMS' which is short before the first RC version now.</p>".
 "<p>You can see that software development is my passion and even nowadays I spend most of my time ".
 "developing software. This <strong>hobby</strong> gives me interesting challenges to solve and opportunities to exchange knowledge ".
-"with others to improve the quality of my work even further. As a result of that I learned to love free ".
-"and open source software, which encourages collaborating to reach a common goal. Therefore I have released ".
+"with others to improve the quality of my work even further. As a result of that I learned to love <strong>free ".
+"and open source software</strong>, which encourages collaborating to reach a common goal. Therefore I have released ".
 "all my software so far under a Free Software license like LGPL. Especially the recent projects are ".
 'hosted on <a href="https://github.com/frmwrk123/">GitHub</a>.</p>'.
-"<p>Web development becomes more and more important and I am happy to say that I have experience in this ".
+"<p><strong>Web development</strong> becomes more and more important and I am happy to say that I have experience in this ".
 "field for about 5 years now. During this time I had contact to almost all aspects of modern web ".
 "applications: frontend and backend (PHP), templates (HTML, <strong>Twig</strong>, Smarty), ".
 "client-side scripting (JavaScript including <strong>jQuery</strong>), persistence (MySQL, filesystems) and design (CSS).</p>".
@@ -45,11 +47,13 @@ $tools = 'Tools';
 $frameworks = 'Frameworks';
 $naturalLangs = 'Natural languages';
 $favoriteSoftware = 'Favourite Software';
+// education
 $education = 'Education';
 $elementarySchool = 'Elementary School';
 $higherSchool = 'Higher School';
 $advancedLevelMath = 'Advanced level of Math';
 $pseProfile = 'Politics-Society-Economy profile';
+$now = 'present';
 $universityHamburg = 'University of Hamburg';
 $BScInformatics = 'Bachelor of Science in Informatics';
 // projects
