@@ -11,6 +11,7 @@ $intro = 'Hi you. I\'m Jim and on this page you will get some information about 
 // sidebar
 $address = 'Address';
 $email = 'Email';
+$platforms = 'Platforms';
 // about me
 $detailedDescription = "<p>Great! You're still here. If you want to get in touch, write me an email ".
 "to the email address listed in the sidebar on the right side. I check my mails mostly on a daily basis. ".

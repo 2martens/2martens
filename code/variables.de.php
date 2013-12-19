@@ -11,6 +11,7 @@ $intro = 'Hallo. Ich heiße Jim und auf dieser Seite bekommen Sie einige Informa
 // sidebar
 $address = 'Adresse';
 $email = 'Email';
+$platforms = 'Plattformen';
 // about me
 $detailedDescription = "<p>Super! Sie sind immer noch hier. Wenn Sie mit mir in Kontakt treten möchten, schreiben Sie mir eine Email ".
 "zu der EMail-Adresse auf der rechten Seite. Ich überprüfe meine Mails meistens täglich. ".

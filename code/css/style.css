@@ -1,5 +1,5 @@
-.right {
-	float: right;
+body {
+    font-size: 11pt;
 }
 
 * {
@@ -35,6 +35,14 @@ footer, footer a {
 hr {
     border: 0;
     border-bottom: 3px solid #DDD;
+}
+
+aside {
+	margin-left: 10px;
+	border-top: 3px solid #DDD;
+	border-bottom: 3px solid #DDD;
+	border-left: 3px solid #DDD;
+	padding-left: 5px;
 }
 
 h5 {
@@ -89,3 +97,28 @@ img.media-object {
   margin-left: auto;
   margin-right: auto;
 }
+
+.margin-bottom {
+	margin-bottom: 20px;
+}
+
+.icon-buttons {
+    list-style: none;
+    padding: 0;
+}
+
+.icon-buttons li {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.icon-buttons a {
+    font-size: 10pt;
+    font-family: Open Sans;
+    display: block;
+}
+
+.icon-buttons a span {
+    font-size: 14pt;
+}
+

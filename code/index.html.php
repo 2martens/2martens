@@ -19,20 +19,35 @@
 					<p><?php echo $intro; ?></p>
 				</div>
 			</div>
-			<div class="row">
-				<aside class="col-xs-2 pull-right">
-					<span class="fa fa-home"></span>&nbsp;<span><?php echo $address; ?>:</span>
-					<address>
-						Jim Martens<br />
-						Hamburg<?php if ($lang != 'de') {?><br />
-						Germany<?php } ?>
-					</address>
-					<div>
-						<span class="fa fa-envelope"></span>&nbsp;<span><?php echo $email; ?>:</span>
-						<span><a href="mailto:jobs@2martens.de">jobs[at]2martens.de</a></span>
-					</div>
-				</aside>
-				<div class="col-xs-10">
+			<div>
+				<div>
+					<aside id="impress" class="pull-right">
+						<span class="fa fa-home"></span>&nbsp;<span><?php echo $address; ?>:</span>
+						<address>
+							Jim Martens<br />
+							Hamburg<?php if ($lang != 'de') {?><br />
+							Germany<?php } ?>
+						</address>
+						<div class="margin-bottom">
+							<span class="fa fa-envelope"></span>&nbsp;<span><?php echo $email; ?>:</span><br />
+							<span><a href="mailto:jobs@2martens.de">jobs[at]2martens.de</a></span>
+						</div>
+						<div>
+							<span class="fa fa-cloud"></span>&nbsp;<span><?php echo $platforms; ?>:</span>
+							<ul class="icon-buttons">
+								<li>
+									<a href="https://github.com/frmwrk123" class="btn btn-primary">
+										<span class="fa fa-github"></span>&nbsp;Github
+									</a>
+								</li>
+								<li>
+									<a href="http://stackoverflow.com/users/2615854/jim-martens" class="btn btn-primary">
+										<span class="fa fa-stack-overflow"></span>&nbsp;StackExchange
+									</a>
+								</li>
+							</ul>
+						</div>
+					</aside>
 					<section>
 						<?php echo $detailedDescription; ?>
 					</section>
@@ -237,7 +252,7 @@
 				</div>
 			</div>
 			<footer>
-				<a class="pull-right" href="#"><?php echo $impress; ?></a>
+				<a class="pull-right" href="#impress"><?php echo $impress; ?></a>
 				Copyright &copy; 2013 - Jim Martens
 			</footer>
 		</div>
