@@ -62,6 +62,7 @@ $projects = 'Projekte';
 $founder = 'Gründer';
 $mainDev = 'Hauptentwickler';
 $contributor = 'Mitentwickler';
+$pzsDesc = 'Offizielle Projektwebsite des Ultimate CMS';
 $ultimateCMSDesc = 'Voll funktionsfähiges CMS für das WoltLab Community Framework 2.0';
 $symfonyWCFDesc = 'Eine Menge an Bundles, die WCF-Funktionalität zu Symfony 2 hinzufügen';
 $wcfPluginsDesc = 'Einige WCF 1.1 Plugins für unterschiedliche Zwecke';

@@ -144,6 +144,21 @@
 						<h3><span class="fa fa-rocket fa-1g"></span> <?php echo $projects; ?></h3>
 					</header>
 					<div class="media">
+						<a class="pull-left" href="http://www.plugins-zum-selberbauen.de">
+							<img src="http://www.gravatar.com/avatar/56e3e8c0f394cc6f37d34d7f3473473b.png"
+							class="media-object" width="64" height="64" alt="" />
+						</a>
+						<div class="media-body">
+							<h5 class="media-heading">
+								<a href="http://www.plugins-zum-selberbauen.de">Plugins zum Selberbauen</a>
+								<span class="job pull-right"><?php echo $founder; ?></span>
+							</h5>
+							<p>
+								<?php echo $pzsDesc; ?>
+							</p>
+						</div>
+					</div>
+					<div class="media">
 						<a class="pull-left" href="https://github.com/frmwrk123/de.plugins-zum-selberbauen.ultimate">
 							<img src="http://www.gravatar.com/avatar/56e3e8c0f394cc6f37d34d7f3473473b.png"
 							class="media-object" width="64" height="64" alt="" />
