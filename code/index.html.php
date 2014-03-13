@@ -150,7 +150,7 @@
 						</a>
 						<div class="media-body">
 							<h5 class="media-heading">
-								<a href="http://www.plugins-zum-selberbauen.de">Plugins zum Selberbauen</a>
+								<a href="http://www.plugins-zum-selberbauen.de">Ultimate CMS Community</a>
 								<span class="job pull-right"><?php echo $founder; ?></span>
 							</h5>
 							<p>

@@ -20,7 +20,7 @@ $detailedDescription = "<p>Super! Sie sind immer noch hier. Wenn Sie mit mir in 
 "<p>Im Jahr 2008 fing ich an zu programmieren. Nachdem ich HTML (was keine Programmiersprache ist) gelernt hatte, ".
 "habe ich ziemlich schnell <strong>PHP</strong> gelernt, was meine erste richtige Programmiersprache war. Seitdem ".
 "<strong>programmierte</strong> ich vorwiegend auf Basis des WoltLab Community Framework. Eine Arbeit welche nun in meiner ersten ".
-"voll funktionsfähigen Webanwendung namens 'Ultimate CMS' gipfelt. Das Ultimate CMS steht kurz vor der ersten RC-Version.</p>".
+"voll funktionsfähigen Webanwendung namens 'Ultimate CMS' gipfelt. Das Ultimate CMS wurde am 15. März 2014 in der ersten finalen Version veröffentlicht.</p>".
 "<p>Wie Sie sehen können ist Programmieren meine Leidenschaft und heute noch verbringe ich die meiste Zeit ".
 "mit der Entwicklung von Software. Dieses <strong>Hobby</strong> gibt mir interessante Herausforderungen, die zu bewältigen sind, ".
 "und Möglichkeiten Wissen mit Anderen auszutauschen, um die Qualität meiner Arbeit weiter zu verbessern. Eine Konsequenz daraus ist, ".

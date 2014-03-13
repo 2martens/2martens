@@ -20,7 +20,7 @@ $detailedDescription = "<p>Great! You're still here. If you want to get in touch
 "<p>I have started programming around 2008. After learning HTML (which is not a programming language), ".
 "I quickly started learning <strong>PHP</strong> which was my first real programming language. Ever since this time ".
 "I continued <strong>programming</strong> mostly on basis of the WoltLab Community Framework which resulted in my first ".
-"fully featured web application named 'Ultimate CMS' which is short before the first RC version now.</p>".
+"fully featured web application named 'Ultimate CMS' which was released on March 15, 2014.</p>".
 "<p>You can see that software development is my passion and even nowadays I spend most of my time ".
 "developing software. This <strong>hobby</strong> gives me interesting challenges to solve and opportunities to exchange knowledge ".
 "with others to improve the quality of my work even further. As a result of that I learned to love <strong>free ".
