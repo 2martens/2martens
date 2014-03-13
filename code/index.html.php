@@ -268,7 +268,7 @@
 			</div>
 			<footer>
 				<a class="pull-right" href="#impress"><?php echo $impress; ?></a>
-				Copyright &copy; 2013 - Jim Martens
+				Copyright &copy; 2013-2014 - Jim Martens
 			</footer>
 		</div>
 	</body>
