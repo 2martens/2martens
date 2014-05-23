@@ -1,0 +1,11 @@
+LICENSE
+=======
+
+The CoreBundle has absolutely no restrictions as it just provides the commonly used third party libraries.
+The third party libraries are licensed under their respective licenses and can be used in the way described in these 
+licenses.
+
+As the bundle contains absolutely no own code, it has no particular license attached to it. Feel free to use it for 
+your own application as you see fit (MIND the licenses of the third party libraries).
+
+The used libraries are specifically Twitter Bootstrap and nothing else at the moment.

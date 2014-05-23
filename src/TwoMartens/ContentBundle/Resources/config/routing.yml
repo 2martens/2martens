@@ -1,0 +1,11 @@
+indexLocale:
+    path: /{_locale}/
+    defaults: { _controller: TwoMartensContentBundle:Index:index }
+    requirements:
+        _locale: de|en
+
+index:
+    path: /
+    defaults: { _controller: TwoMartensContentBundle:Index:index }
+    requirements:
+        _locale: en

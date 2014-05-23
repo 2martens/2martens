@@ -1,0 +1,50 @@
+{
+    "name": "TwoMartens/ContentBundle",
+    "type": "symfony-bundle",
+    "description": "ContentBundle for setting up a resume page",
+    "keywords": [],
+    "homepage": "http://www.2martens.de",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jim Martens",
+            "email": "github@2martens.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "~2.4",
+        "twig/extensions": "~1.0",
+        "symfony/assetic-bundle": "~2.3",
+        "sensio/distribution-bundle": "~2.3",
+        "sensio/framework-extra-bundle": "~3.0",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "TwoMartens/CoreBundle": "~"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ]
+    },
+    "autoload": {
+        "psr-0": { "TwoMartens\\ContentBundle\\": "" }
+    },
+    "target-dir": "TwoMartens/ContentBundle",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.4-dev"
+        }
+    }
+}
