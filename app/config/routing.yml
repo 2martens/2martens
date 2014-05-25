@@ -1,0 +1,2 @@
+_two_martens_content:
+    resource: "@TwoMartensContentBundle/Resources/config/routing.yml"

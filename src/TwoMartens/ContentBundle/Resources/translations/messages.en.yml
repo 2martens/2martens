@@ -1,0 +1,59 @@
+# messages.en.yml
+
+# variables for English
+lang: en
+
+# header
+name: Jim Martens
+nameDesc: Software developer
+
+# sidebar
+address: Address
+email: Email
+platforms: Platforms
+
+# skills
+skills: Skills
+programmingAndMarkupLangs: Programming and markup languages
+tools: Tools
+frameworks: Frameworks
+naturalLangs: Natural languages
+German: German, native language
+English: English, fluent
+favoriteSoftware: Favourite Software
+# education
+education: Education
+elementarySchool: Elementary School
+higherSchool: Higher School
+advancedLevelMath: Advanced level of Math
+pseProfile: Politics-Society-Economy profile
+now: present
+universityHamburg: University of Hamburg
+BScInformatics: Bachelor of Science in Informatics
+# projects
+projects: Projects
+founder: Founder
+mainDev: Main developer
+contributor: Contributor
+pzsDesc: Official project website for Ultimate CMS
+ultimateCMSDesc: Fully functional CMS for the WoltLab Community Framework 2.0
+symfonyWCFDesc: A set of bundles that adds WCF functionality to the Symfony 2 framework
+wcfPluginsDesc: A couple of different WCF 1.1 plugins for various purposes.
+wcfDesc: Web framework of WoltLab GmbH
+# expectations
+expectations: Expectations
+requirements: Requirements
+payment: Payment
+geq20Euro: at least 20&euro/h
+max10Hours: not more than 10 hours/week
+freeWorkingTime: free time disposition
+kindOfWork: Kind of work
+noGirlForEverything: no girl for everything
+noHighPressure: no high pressure jobs (e.g. "make it so, you have 4 days")
+noMissionCritical: no mission critical jobs (e.g. "if you fail, our company is screwed")
+# preferable
+preferable: Preferable
+whenItsDone: it's done when it's done
+myOwnProjects: working on my own projects
+# footer
+impress: Impress
