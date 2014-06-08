@@ -1,0 +1,171 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}2martens Web Platform{% endblock %}
+{% block bodyClass %}class="pitch"{% endblock %}
+
+{% block body %}
+<header class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h1>Build web applications with ease</h1>
+                <p class="lead">
+                    The 2martens Web Platform (2WP) provides a whole array
+                    of useful community functionality out of the house.
+                    All you have to do is develop your application. 2WP does
+                    the rest.
+                </p>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-md-offset-4 col-sm-offset-4">
+                        <p class="button-row">
+                            <a class="btn btn-large btn-success" 
+                               href="https://github.com/2martens/web-platform/fork">
+                                <span class="fa fa-code-fork fa-2x pull-left"></span>
+                                Fork on GitHub
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="main">
+    <div class="feature offcolor">
+        <div class="container padded">
+            <div class="row">
+                <div class="col-md-2 col-sm-2">
+                    <span class="fa fa-warning fa-5x center"></span>
+                </div>
+                <div class="col-md-10 col-sm-10">
+                    <p class="h2">If you are not a developer, the 2WP is nothing for you (yet).
+                        It is still in development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature">
+        <div class="container padded">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-3 col-sm-2 col-sm-offset-3">
+                    <span class="fa fa-home fa-5x center"></span>
+                </div>
+                <div class="col-md-5 col-sm-5">
+                    <h2 class="left">Administrator Control Panel</h2>
+                    <p class="sub-head-feature-content">
+                        Modern ACP with great support for all-day administrative
+                        tasks. It can be extended by each package.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature offcolor">
+        <div class="container padded">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-3 col-sm-5 col-sm-offset-3">
+                    <h2 class="left">Project management</h2>
+                    <p class="sub-head-feature-content">
+                        Manage multiple projects at once. Select which installed
+                        applications (subset of packages) are available in
+                        project. Attach a domain or path for the project.<br />
+                        <br />
+                        Share the user-base if you want. This makes it possible
+                        that users register once and can then access this
+                        project with the global rights. Otherwise a user
+                        has to register again for the project and becomes
+                        member of project-only user groups.
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-2">
+                    <span class="fa fa-archive fa-5x center"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature">
+        <div class="container padded">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-3 col-sm-2 col-sm-offset-3">
+                    <span class="fa fa-folder fa-5x center"></span>
+                </div>
+                <div class="col-md-5 col-sm-5">
+                    <h2 class="left">Package management</h2>
+                    <p class="sub-head-feature-content">
+                        An intuitive package system allows the installation,
+                        update and deinstallation of packages.<br /><br />
+                        It even supports package servers for automatic
+                        updates.
+                        <br /><br />
+                        A package consists of one or more bundles plus
+                        some metadata.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature offcolor">
+        <div class="container padded">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-3 col-sm-5 col-sm-offset-3">
+                    <h2 class="left">User system</h2>
+                    <p class="sub-head-feature-content">
+                        Extendable user system with user control panel (UCP)
+                        that provides settings for the general user.<br />
+                        <br />
+                        Provides profile of user with recent activity,
+                        wall comments and more.<br />
+                        <br />
+                        Supports a variety of registration and login mechanisms:
+                        E-Mail-Activation, Admin activation, OpenID, LDAP.
+                        <br /><br />
+                        State-of-the-art password hashing to ensure maximum
+                        password security.
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-2">
+                    <span class="fa fa-user fa-5x center"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature">
+        <div class="container padded">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-3 col-sm-2 col-sm-offset-3">
+                    <span class="fa fa-users fa-5x center"></span>
+                </div>
+                <div class="col-md-5 col-sm-5">
+                    <h2 class="left">Group system</h2>
+                    <p class="sub-head-feature-content">
+                        Extensive group system that comes with default
+                        groups and allows the creation of custom groups.<br />
+                        <br />
+                        Provides an intuitive wrapper around the Symfony
+                        managed ROLE_* access rights.<br />
+                        <br />
+                        Allows for different rights on different levels
+                        (e.g. global, project-wide).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<footer id="footer" class="pitch">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-md-offset-4 col-sm-offset-4">
+                <small class="copyright">
+                    Copyright &copy; 2013-2014 - Jim Martens
+                </small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+{% endblock %}

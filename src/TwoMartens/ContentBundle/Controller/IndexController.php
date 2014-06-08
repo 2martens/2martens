@@ -20,16 +20,25 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
  * @copyright 2013-2014 Jim Martens
  * @license   http://www.gnu.org/licenses/lgpl-3.0 GNU Lesser General Public License, version 3
  */
-class IndexController extends Controller {
-    
+class IndexController extends Controller
+{
+
     /**
      * {@inheritdoc}
      */
     public function indexAction()
     {
         return $this->render('TwoMartensContentBundle:Index:index.html.twig',
-        array(
-            'lang' => $this->get('translator')->trans('lang')
+            array(
+                'lang' => $this->get('translator')->trans('lang')
         ));
     }
-} 
+
+    /**
+     * {@inheritdoc}
+     */
+    public function webplatformAction()
+    {
+        return $this->render('TwoMartensContentBundle:Index:webplatform.html.twig');
+    }
+}

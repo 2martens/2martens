@@ -9,3 +9,6 @@ index:
     defaults: { _controller: TwoMartensContentBundle:Index:index }
     requirements:
         _locale: en
+webplatform:
+    path: /web-platform/
+    defaults: { _controller: TwoMartensContentBundle:Index:webplatform }
