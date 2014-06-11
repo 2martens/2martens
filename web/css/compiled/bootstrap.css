@@ -10,7 +10,7 @@ body {
 }
 
 * {
-    font-family: Open Sans;
+    font-family: Open Sans,sans-serif;
 }
 
 footer.hr {
@@ -66,7 +66,7 @@ p {
 ul.items {
     font-weight: normal;
     padding: 0;
-    font-size: 0pt;
+    font-size: 0;
 }
 
 ul.items > li {
@@ -121,7 +121,7 @@ img.media-object {
 
 .icon-buttons a {
     font-size: 10pt;
-    font-family: Open Sans;
+    font-family: Open Sans,sans-serif;
     display: block;
 }
 
@@ -138,7 +138,7 @@ img.media-object {
 }
 
 .page-header {
-    background-color: #333;
+    background-color: #888;
     color: #FFF;
     margin: 0;
 }
@@ -164,10 +164,10 @@ footer.pitch {
     padding: 30px 0;
 }
 
-
 small.copyright {
     color: #999;
 }
 
-
-
+.logo {
+    margin-right: 30px;
+}

@@ -5,23 +5,29 @@
 
 {% block body %}
 <header class="page-header">
-    <div class="container">
+    <a id="top"></a>
+    <div class="container-fluid center">
         <div class="row">
-            <div class="col-md-12 col-sm-12">
+            <div class="col-md-2 col-sm-2 col-md-offset-2 col-sm-offset-2">
+                <div class="logo">
+                    <img src="{{ asset('logo.svg') }}" width="256" height="256" />
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
                 <h1>Build web applications with ease</h1>
                 <p class="lead">
                     The 2martens Web Platform (2WP) provides a whole array
-                    of useful community functionality out of the house.
+                    of useful (community) functionality out of the house.
                     All you have to do is develop your application. 2WP does
                     the rest.
                 </p>
                 <div class="row">
-                    <div class="col-md-6 col-sm-6 col-md-offset-4 col-sm-offset-4">
+                    <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4">
                         <p class="button-row">
                             <a class="btn btn-large btn-success" 
-                               href="https://github.com/2martens/web-platform/fork">
-                                <span class="fa fa-code-fork fa-2x pull-left"></span>
-                                Fork on GitHub
+                               href="https://github.com/2martens/web-platform/blob/master/CONTRIBUTING.md">
+                                <span class="fa fa-plus fa-2x pull-left"></span>
+                                Contribute
                             </a>
                         </p>
                     </div>
@@ -31,128 +37,302 @@
     </div>
 </header>
 
+<div class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4">
+                <nav class="mainMenu">
+                    <span>Features for</span>
+                    <ul>
+                        <li><a id="buttonAdmin" class="btn btn-large btn-default" href="{{ path('webplatform') }}">Admin</a></li>
+                        <li><a id="buttonDev" class="btn btn-large btn-default" href="{{ path('webplatform') }}">Developer</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="main">
-    <div class="feature offcolor">
-        <div class="container padded">
-            <div class="row">
-                <div class="col-xs-12 col-md-2 col-sm-2">
-                    <span class="fa fa-warning fa-5x center"></span>
+    <div id="mainAdmin">
+        {#<div class="feature offcolor">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-xs-12 col-md-2 col-sm-2">
+                        <span class="fa fa-warning fa-5x center"></span>
+                    </div>
+                    <div class="col-xs-12 col-md-10 col-sm-10">
+                        <p class="h2">If you are not a developer, the 2WP is nothing for you (yet).
+                            It is still in development.</p>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-md-10 col-sm-10">
-                    <p class="h2">If you are not a developer, the 2WP is nothing for you (yet).
-                        It is still in development.</p>
+            </div>
+        </div>#}
+        <div class="feature">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
+                        <span class="fa fa-home fa-5x center"></span>
+                    </div>
+                    <div class="col-md-5 col-sm-5">
+                        <h2 class="left">Administrator Control Panel</h2>
+                        <p class="sub-head-feature-content">
+                            Modern ACP with great support for all-day administrative
+                            tasks. It can be extended by each package.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="feature">
-        <div class="container padded">
-            <div class="row">
-                <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
-                    <span class="fa fa-home fa-5x center"></span>
-                </div>
-                <div class="col-md-5 col-sm-5">
-                    <h2 class="left">Administrator Control Panel</h2>
-                    <p class="sub-head-feature-content">
-                        Modern ACP with great support for all-day administrative
-                        tasks. It can be extended by each package.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="feature offcolor">
-        <div class="container padded">
-            <div class="row">
-                <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2">
-                    <h2 class="left">Project management</h2>
-                    <p class="sub-head-feature-content">
-                        Manage multiple projects at once. Select which installed
-                        applications (subset of packages) are available in
-                        project. Attach a domain or path for the project.<br />
-                        <br />
-                        Share the user-base if you want. This makes it possible
-                        that users register once and can then access this
-                        project with the global rights. Otherwise a user
-                        has to register again for the project and becomes
-                        member of project-only user groups.
-                    </p>
-                </div>
-                <div class="col-md-2 col-sm-2">
-                    <span class="fa fa-archive fa-5x center"></span>
+        <div class="feature offcolor">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2">
+                        <h2 class="left">Project management</h2>
+                        <p class="sub-head-feature-content">
+                            Manage multiple projects at once. Select which installed
+                            applications (subset of packages) are available in
+                            project. Attach a domain or path for the project.<br />
+                            <br />
+                            Share the user-base if you want. This makes it possible
+                            that users register once and can then access this
+                            project with the global rights. Otherwise a user
+                            has to register again for the project and becomes
+                            member of project-only user groups.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <span class="fa fa-archive fa-5x center"></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="feature">
-        <div class="container padded">
-            <div class="row">
-                <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
-                    <span class="fa fa-folder fa-5x center"></span>
-                </div>
-                <div class="col-md-5 col-sm-5">
-                    <h2 class="left">Package management</h2>
-                    <p class="sub-head-feature-content">
-                        An intuitive package system allows the installation,
-                        update and deinstallation of packages.<br /><br />
-                        It even supports package servers for automatic
-                        updates.
-                        <br /><br />
-                        A package consists of one or more bundles plus
-                        some metadata.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="feature offcolor">
-        <div class="container padded">
-            <div class="row">
-                <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2">
-                    <h2 class="left">User system</h2>
-                    <p class="sub-head-feature-content">
-                        Extendable user system with user control panel (UCP)
-                        that provides settings for the general user.<br />
-                        <br />
-                        Provides profile of user with recent activity,
-                        wall comments and more.<br />
-                        <br />
-                        Supports a variety of registration and login mechanisms:
-                        E-Mail-Activation, Admin activation, OpenID, LDAP.
-                        <br /><br />
-                        State-of-the-art password hashing to ensure maximum
-                        password security.
-                    </p>
-                </div>
-                <div class="col-md-2 col-sm-2">
-                    <span class="fa fa-user fa-5x center"></span>
+        <div class="feature">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
+                        <span class="fa fa-folder fa-5x center"></span>
+                    </div>
+                    <div class="col-md-5 col-sm-5">
+                        <h2 class="left">Package management</h2>
+                        <p class="sub-head-feature-content">
+                            An intuitive package system allows the installation,
+                            update and deinstallation of packages.<br /><br />
+                            It even supports package servers for automatic
+                            updates.
+                            <br /><br />
+                            A package consists of one or more bundles plus
+                            some metadata.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="feature">
-        <div class="container padded">
-            <div class="row">
-                <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
-                    <span class="fa fa-users fa-5x center"></span>
-                </div>
-                <div class="col-md-5 col-sm-5">
-                    <h2 class="left">Group system</h2>
-                    <p class="sub-head-feature-content">
-                        Extensive group system that comes with default
-                        groups and allows the creation of custom groups.<br />
-                        <br />
-                        Provides an intuitive wrapper around the Symfony
-                        managed ROLE_* access rights.<br />
-                        <br />
-                        Allows for different rights on different levels
-                        (e.g. global, project-wide).
-                    </p>
+        <div class="feature offcolor">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2">
+                        <h2 class="left">User system</h2>
+                        <p class="sub-head-feature-content">
+                            Extendable user system with user control panel (UCP)
+                            that provides settings for the general user.<br />
+                            <br />
+                            Provides profile of user with recent activity,
+                            wall comments and more.<br />
+                            <br />
+                            State-of-the-art password hashing to ensure maximum
+                            password security.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <span class="fa fa-user fa-5x center"></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="feature">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
+                        <span class="fa fa-users fa-5x center"></span>
+                    </div>
+                    <div class="col-md-5 col-sm-5">
+                        <h2 class="left">Group system</h2>
+                        <p class="sub-head-feature-content">
+                            Extensive group system that comes with default
+                            groups and allows the creation of custom groups.<br />
+                            <br />
+                            Provides an intuitive wrapper around the Symfony
+                            managed ROLE_* access rights. In addition it allows
+                            for various types of options (select, input, etc.).<br />
+                            <br />
+                            Allows for different rights on different levels
+                            (e.g. global, project-wide).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature offcolor">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2">
+                        <h2 class="left">Style system</h2>
+                        <p class="sub-head-feature-content">
+                            Change the visual appearance of your website with
+                            a simple click. Write the style once and use it
+                            wherever you can find a 2WP. Over are the times
+                            of rewriting the perfect style for every product
+                            you use (Drupal, Joomla, WordPress, WCF, etc.).<br />
+                            <br />
     
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <span class="fa fa-camera fa-5x center"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
+                        <span class="fa fa-openid fa-5x center"></span>
+                    </div>
+                    <div class="col-md-5 col-sm-5">
+                        <h2 class="left">OpenID authentication</h2>
+                        <p class="sub-head-feature-content">
+                            Login in with GitHub, Facebook or Twitter account
+                            and create a user on the local system at the first
+                            time. Login will always happen via OpenID then.<br />
+                            <br />
+                            Login with a user account (A) from another 2WP installation
+                            and synchronize profile fields on each login. You
+                            can even have one 2WP installation as the master
+                            and the others as slave. That way the user data
+                            is always synchronized with the master installation.
+                            <br /><br />
+                            Upon each login in one of the slave installations,
+                            these will get the latest changes from master.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    {#
+    
+        ###     ########   #           #
+        #  #    #           #         #
+        #   #   #            #       #
+        #   #   ########      #     #
+        #   #   #              #   #
+        #  #    #               # #
+        ###     ########         #
+    
+    #}
+    
+    <div id="mainDev">
+        <div class="feature">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
+                        <span class="fa fa-code fa-5x center"></span>
+                    </div>
+                    <div class="col-md-5 col-sm-5">
+                        <h2 class="left">OOP</h2>
+                        <p class="sub-head-feature-content">
+                            The 2WP implements the MVC pattern and is completely
+                            written in OOP. If you ever had to debug code similar
+                            to the WordPress code, you will love the clean
+                            structure and strict seperation of concerns.<br />
+                            <br />
+                            No large files where you don't know what they do.
+                            Every class has exactly one purpose. This allows
+                            for high maintainability and reduces debugging
+                            times severly.<br />
+                            <br />
+                            Furthermore 2WP is completely covered with unit
+                            and functional tests to minimize manual debugging
+                            to the absolute minimum. Writing for 2WP becomes
+                            a joy, even if something doesn't work.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature offcolor">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2">
+                        <h2 class="left">HTML5</h2>
+                        <p class="sub-head-feature-content">
+                            The 2WP is HTML5-compliant and supports the most
+                            modern features HTML has to offer.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <span class="fa fa-html5 fa-5x center"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
+                        <span class="fa fa-cubes fa-5x center"></span>
+                    </div>
+                    <div class="col-md-5 col-sm-5">
+                        <h2 class="left">Modular architecture</h2>
+                        <p class="sub-head-feature-content">
+                            The architecture is designed to embrace extensions.
+                            Wherever possible you can add event listeners to
+                            provide additional functionality without editing
+                            the original files, allowing for easy updates.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature offcolor">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2">
+                        <h2 class="left">Git and GitHub</h2>
+                        <p class="sub-head-feature-content">
+                            We use Git as version control system and GitHub
+                            as hosting platform.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <span class="fa fa-git fa-5x center"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="container padded">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
+                        <span class="fa fa-file-o fa-5x center"></span>
+                    </div>
+                    <div class="col-md-5 col-sm-5">
+                        <h2 class="left">Documentation</h2>
+                        <p class="sub-head-feature-content">
+                            An extensive documentation that helps you to find
+                            the relevant peaces quick. From contribution over
+                            the package system to available events. In the
+                            documentation you can find everything you need to
+                            know for developing modern web applications based
+                            on 2WP.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer id="footer" class="pitch">
@@ -163,9 +343,35 @@
                     Copyright &copy; 2013-2014 - Jim Martens
                 </small>
             </div>
+            <div class="col-md-2 col-sm-2">
+                <span class="fa fa-step-backward fa-rotate-90"></span><a id="backToTop" class="navLinks" href="{{ path('webplatform') }}"> Back to top</a>
+            </div>
         </div>
     </div>
 </footer>
+{% endblock %}
 
-
+{% block javascripts %}
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+            $(function() {
+                $('#buttonAdmin').click(function(event) {
+                    event.preventDefault();
+                    $('#mainDev').hide();
+                    $('#mainAdmin').show();
+                });
+                $('#buttonDev').click(function(event) {
+                    event.preventDefault();
+                    $('#mainAdmin').hide();
+                    $('#mainDev').show();
+                });
+                $('#backToTop').click(function(event) {
+                    event.preventDefault();
+                    $('html, body').animate({scrollTop: 0}, 'slow');
+                });
+                $('#mainDev').hide();
+            });
+        //]]>
+    </script>
 {% endblock %}
