@@ -45,7 +45,7 @@ wcfDesc: Web Framework der WoltLab GmbH
 expectations: Erwartungen
 requirements: Anforderungen
 payment: Bezahlung
-geq20Euro: mindestens 20&euro/h
+geq20Euro: mindestens 20&euro;/h
 max10Hours: maximal 10 Stunden/Woche
 freeWorkingTime: freie Zeiteinteilung
 kindOfWork: Art der Arbeit
