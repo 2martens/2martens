@@ -41,4 +41,26 @@ class IndexController extends Controller
     {
         return $this->render('TwoMartensContentBundle:Index:webplatform.html.twig');
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function talksAction()
+    {
+        return $this->render('TwoMartensContentBundle:Index:talks.html.twig');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function fileAction($name)
+    {
+        $filename = $this->get('kernel')->getRootDir() . '/files/'.$name.'.pdf';
+        $response = new BinaryFileResponse($filename);
+       
+        $d = $response->headers->makeDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT, $filename);
+        $response->headers->set('Content-Disposition', $d);
+       
+        return $response;
+    }    
 }

@@ -12,3 +12,11 @@ index:
 webplatform:
     path: /web-platform/
     defaults: { _controller: TwoMartensContentBundle:Index:webplatform }
+talks:
+    path: /talks/
+    defaults: { _controller: TwoMartensContentBundle:Index:talks }
+file:
+    path: /file/{name}/
+    defaults: { _controller: TwoMartensContentBundle:Index:file }
+    requirements:
+        name: [a-Z0-9\-_]+
