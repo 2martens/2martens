@@ -12,6 +12,8 @@
 namespace TwoMartens\ContentBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 
 /**
  * Handles the index actions.
@@ -58,7 +60,7 @@ class IndexController extends Controller
         $filename = $this->get('kernel')->getRootDir() . '/files/'.$name.'.pdf';
         $response = new BinaryFileResponse($filename);
        
-        $d = $response->headers->makeDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT, $filename);
+        $d = $response->headers->makeDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT, $name.'.pdf');
         $response->headers->set('Content-Disposition', $d);
        
         return $response;

@@ -18,5 +18,3 @@ talks:
 file:
     path: /file/{name}/
     defaults: { _controller: TwoMartensContentBundle:Index:file }
-    requirements:
-        name: [a-Z0-9\-_]+

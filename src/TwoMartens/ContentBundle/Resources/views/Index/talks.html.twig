@@ -63,10 +63,26 @@
                 <div class="col-md-5 col-sm-5">
                     <h2 class="left">Qual der Wahl - oder developer last</h2>
                     <p class="sub-head-feature-content">
-                        <a href="{{ path('file', {'name': 'phpunconf2014-pagekit'}) }}">Download PDF</a>
+                        <a href="{{ path('file', {'name': 'phpunconf2014-pagekit' }) }}">Download PDF</a>
                     </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<footer id="footer" class="pitch">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-md-offset-4 col-sm-offset-4">
+                <small class="copyright">
+                    Copyright &copy; 2013-2014 - Jim Martens
+                </small>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <span class="fa fa-step-backward fa-rotate-90"></span><a id="backToTop" class="navLinks" href="{{ path('webplatform') }}"> Back to top</a>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
