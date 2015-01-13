@@ -1,0 +1,88 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}2martens Talks{% endblock %}
+{% block bodyClass %}class="pitch"{% endblock %}
+
+{% block body %}
+<header class="page-header">
+    <a id="top"></a>
+    <div class="container-fluid center">
+        <div class="row">
+            <div class="col-md-2 col-sm-2 col-md-offset-2 col-sm-offset-2">
+                <div class="logo">
+                    <img src="{{ asset('logo.svg') }}" width="256" height="256" />
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <h1>Inventing the future of the web</h1>
+                <p class="lead">
+                    I am looking forward to improve the web.
+                </p>
+                {#<div class="row">
+                    <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4">
+                        <p class="button-row">
+                            <a class="btn btn-large btn-success" 
+                               href="https://github.com/2martens/web-platform/blob/master/CONTRIBUTING.md">
+                                <span class="fa fa-plus fa-2x pull-left"></span>
+                                Contribute
+                            </a>
+                        </p>
+                    </div>
+                </div>#}
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4">
+                <nav class="mainMenu">
+                    <ul>
+                        <li>
+                            <a id="index" class="btn btn-large btn-default" href="{{ path('index') }}">Profile</a>
+                        </li>
+                        <li>
+                            <a id="webplatform" class="btn btn-large btn-default" href="{{ path('webplatform') }}">2martens Web Platform</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="main">
+    <div class="feature">
+        <div class="container padded">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
+                    <span class="fa fa-code fa-5x center"></span>
+                </div>
+                <div class="col-md-5 col-sm-5">
+                    <h2 class="left">Qual der Wahl - oder developer last</h2>
+                    <p class="sub-head-feature-content">
+                        <a href="{{ path('file', {'name': 'phpunconf2014-pagekit' }) }}">Download PDF</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer" class="pitch">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-md-offset-4 col-sm-offset-4">
+                <small class="copyright">
+                    Copyright &copy; 2013-2014 - Jim Martens
+                </small>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <span class="fa fa-step-backward fa-rotate-90"></span><a id="backToTop" class="navLinks" href="{{ path('webplatform') }}"> Back to top</a>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}

@@ -9,3 +9,12 @@ index:
     defaults: { _controller: TwoMartensContentBundle:Index:index }
     requirements:
         _locale: en
+webplatform:
+    path: /web-platform/
+    defaults: { _controller: TwoMartensContentBundle:Index:webplatform }
+talks:
+    path: /talks/
+    defaults: { _controller: TwoMartensContentBundle:Index:talks }
+file:
+    path: /file/{name}/
+    defaults: { _controller: TwoMartensContentBundle:Index:file }

@@ -40,6 +40,12 @@ I will be able to concentrate more on these projects, they get finished sooner (
 people will profit from it. Above that I will recommend you as a good employer. In these times this is an
 endorsement that is not earned easy.</p>]]></target>
             </trans-unit>
+            <trans-unit id="geq20Euro">
+                <source>geq20Euro</source>
+                <target>
+                    at least 20<![CDATA[&euro;]]>/h
+                </target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

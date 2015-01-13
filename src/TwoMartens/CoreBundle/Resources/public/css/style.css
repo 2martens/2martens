@@ -1,12 +1,13 @@
-body {
+html,body {
     font-size: 11pt;
+    overflow-x: hidden;
 }
 
 * {
-    font-family: Open Sans;
+    font-family: Open Sans,sans-serif;
 }
 
-footer {
+footer.hr {
     border-top: 3px solid #DDD;
     padding-top: 5px;
     font-size: 0.8em;
@@ -59,7 +60,7 @@ p {
 ul.items {
     font-weight: normal;
     padding: 0;
-    font-size: 0pt;
+    font-size: 0;
 }
 
 ul.items > li {
@@ -114,7 +115,7 @@ img.media-object {
 
 .icon-buttons a {
     font-size: 10pt;
-    font-family: Open Sans;
+    font-family: Open Sans,sans-serif;
     display: block;
 }
 
@@ -122,3 +123,82 @@ img.media-object {
     font-size: 14pt;
 }
 
+/*
+ * pitch website
+ */
+
+.offcolor {
+    background-color: #F7F7F7;
+}
+
+.page-header {
+    background-color: #888;
+    color: #FFF;
+    margin: 0;
+    border: 0;
+}
+
+span.center {
+    margin-top: 20%;
+}
+
+body.pitch {
+    margin: 0;
+}
+
+.pitch header {
+    padding-top: 70px;
+}
+
+.container.padded {
+    padding: 80px 0;
+}
+
+footer.pitch {
+    background-color: #333;
+    padding: 30px 0;
+}
+
+small.copyright {
+    color: #999;
+}
+
+.logo {
+    margin-top: -25px;
+}
+
+.menu {
+    background-color: #666;
+}
+
+.mainMenu {
+    display: inline-block;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.mainMenu ul {
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mainMenu ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mainMenu ul li a {
+    display: inline-block;
+    padding: 4px 9px;
+}
+
+.navLinks:hover {
+    text-decoration: none;
+}
+
+.btn-default {
+    border: 0;
+    border-radius: 0;
+}

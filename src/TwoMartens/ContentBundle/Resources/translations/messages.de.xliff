@@ -43,6 +43,12 @@
                         Leute davon profitieren. Darüber hinaus werde ich Sie als Arbeitgeber empfehlen. In diesen Zeiten ist solch eine
                         Empfehlung sehr wertvoll.</p>]]></target>
             </trans-unit>
+            <trans-unit id="geq20Euro">
+                <source>geq20Euro</source>
+                <target>
+                    mindestens 20<![CDATA[&euro;]]>/h
+                </target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
