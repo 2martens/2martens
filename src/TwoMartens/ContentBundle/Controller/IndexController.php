@@ -58,7 +58,7 @@ class IndexController extends Controller
      */
     public function talksAction()
     {
-        $reponse = $this->render('TwoMartensContentBundle:Index:talks.html.twig');
+        $response = $this->render('TwoMartensContentBundle:Index:talks.html.twig');
         $response->setPublic();
         $response->setMaxAge(86400);
 
