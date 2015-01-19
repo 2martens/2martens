@@ -14,6 +14,7 @@ namespace TwoMartens\ContentBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Handles the index actions.
@@ -30,10 +31,14 @@ class IndexController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('TwoMartensContentBundle:Index:index.html.twig',
+        $response = $this->render('TwoMartensContentBundle:Index:index.html.twig',
             array(
                 'lang' => $this->get('translator')->trans('lang')
         ));
+        $response->setPublic();
+        $response->setMaxAge(86400);
+        
+        return $response;
     }
 
     /**
@@ -41,7 +46,11 @@ class IndexController extends Controller
      */
     public function webplatformAction()
     {
-        return $this->render('TwoMartensContentBundle:Index:webplatform.html.twig');
+        $response = $this->render('TwoMartensContentBundle:Index:webplatform.html.twig');
+        $response->setPublic();
+        $response->setMaxAge(86400);
+
+        return $response;
     }
 
     /**
@@ -49,7 +58,11 @@ class IndexController extends Controller
      */
     public function talksAction()
     {
-        return $this->render('TwoMartensContentBundle:Index:talks.html.twig');
+        $reponse = $this->render('TwoMartensContentBundle:Index:talks.html.twig');
+        $response->setPublic();
+        $response->setMaxAge(86400);
+
+        return $response;
     }
 
     /**
